@@ -6,11 +6,16 @@ get '/doug' do
 	erb "<br><b>Hello</b> <%= Time.now %> "
 end
 
-get '/way/:x' do 
-	erb "Hello  #{params[:x]}" 
+get '/way/:x' do
+	erb "Hello  #{params[:x]}"
 end
-#comment
+
+# Comments are nice
 get '/harpo' do
-	@x = "dog" 
+	@x = "dog"
 	erb :foo
+end
+
+get '/badurl' do
+  redirect to('/harpo')
 end
