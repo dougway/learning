@@ -9,7 +9,7 @@ end
 get '/way/:x' do 
 	erb "Hello  #{params[:x]}" 
 end
-
+#comment
 get '/harpo' do
 	@x = "dog" 
 	erb :foo
